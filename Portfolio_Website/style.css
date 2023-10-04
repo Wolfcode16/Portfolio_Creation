@@ -1,0 +1,130 @@
+body{
+    background-color: #080808;  
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    /*background-image: url();*/
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+/* --------------- Navigation bar --------------- */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ----- Navigation Bar --> Social Media Icon ----- */
+
+/* Width of box determins how spread out icons are */
+.SocialContact ul{
+    width: 400px;
+    margin: 0 40px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+   }
+
+/* Make sure they horizontally align */
+.SocialContact ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+/* Background Circle */
+.SocialContact ul li{
+    position: relative; 
+    display: inline-block;
+    width: 60px;            
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+}
+
+.SocialContact ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--color);
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.SocialContact ul li:hover::before{
+    transform: scale(1.1);
+    /* Determins shine radius */
+    box-shadow: 0 0 50px var(--color);
+}
+
+.SocialContact li:hover {
+    color: var(--color);
+    box-shadow: 0 0 8px var(--color);
+    text-shadow: 0 0 8px var(--color);
+  }
+
+/* ------- Navigation Bar --> Page Names -------- */
+
+.PageNames ul{
+    width: 600px;
+    margin: 0 40px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PageNames ul li{
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    margin: 100px 20px;
+}
+
+.PageNames ul li a{
+    color: #fff;
+    text-decoration: none;
+    /* font-family: 'Pixelify Sans', cursive; */
+    font-family: 'Black Ops One', cursive;
+    font-size: 24px;
+    position: relative;
+}
+
+.PageNames ul li::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: #9232e7;
+}
+
+.PageNames ul li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* ---------------------------------------------- */
