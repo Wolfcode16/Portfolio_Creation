@@ -32,12 +32,13 @@ title{
     padding: 3%;
 }
 
-.glowing-button{
-    display:flex;
+/* ----- Navigation Bar --> Social Media Icon ----- */
+
+Test{
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-
-/* ----- Navigation Bar --> Social Media Icon ----- */
 
 /* Width of box determins how spread out icons are */
 .SocialContact ul{
