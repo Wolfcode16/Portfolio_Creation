@@ -34,12 +34,6 @@ title{
 
 /* ----- Navigation Bar --> Social Media Icon ----- */
 
-Test{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Width of box determins how spread out icons are */
 .SocialContact ul{
     width: 100%;
