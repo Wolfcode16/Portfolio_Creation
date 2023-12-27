@@ -64,11 +64,11 @@ Test{
     transition: opacity 100ms linear;
 }
 
-.glowing-button:hover {
+/* .glowing-button:hover {
     color: rgba(0, 0, 0, 0.8);
     text-shadow: none;
     animation: none;
-}
+} 
 
 .glowing-button:hover .glowing-text{
     animation: none;
@@ -88,6 +88,7 @@ Test{
 .glowing-button:hover:after {
     opacity: 1;
 }
+*/
 
 @keyframes faulty-flicker {
     0%{opacity: 0.1;}
